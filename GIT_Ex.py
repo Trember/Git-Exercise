@@ -10,10 +10,6 @@ class AnalogConvertor:
     
     def set_digital_value(self, value):
         self.analog_volt = value
-    
-    def padded_bin(self,i, width):
-        s = bin(i)
-        return s[:2] + s[2:].zfill(width)
 
 if __name__ == '__main__':
     convertor = AnalogConvertor(5)
